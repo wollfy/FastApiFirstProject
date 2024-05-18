@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <h1>Deposits</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Rate</th>
+          <th>Deposit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for deposit in deposits %}
+          <tr>
+            <td>{{ deposit.amount }}</td>
+            <td>{{ deposit.rate }}</td>
+            <td>{{ deposit.deposit }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <a href="/">Add new deposit</a>
+  </body>
+</html>
